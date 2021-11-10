@@ -1,0 +1,16 @@
+[package]
+name = "stepper-lib"
+version = "0.1.0"
+authors = ["Mordecai Malignatus <mordecai@malignat.us>"]
+edition = "2018"
+description = "Crate to build your own CLI stepping applications"
+license = "3-clause BSD"
+categories = ["command-line-utilities", "development-tools"]
+keywords = ["checklist", "tui"]
+readme = "README.org"
+repository = "https://github.com/MordecaiMalignatus/shed/tree/master/tools/checklist-stepper"
+
+[dependencies]
+tui = "0.16"
+termion = "1.5"
+anyhow = "1.0.45"

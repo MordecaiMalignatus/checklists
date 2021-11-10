@@ -1,0 +1,21 @@
+[package]
+name = "checklist-cli"
+description = "TUI tool to step through checklists."
+license = "3-clause BSD"
+repository = "https://github.com/MordecaiMalignatus/shed/tree/master/tools/checklist-stepper"
+version = "0.1.0"
+authors = ["Mordecai Malignatus <mordecai@malignat.us>"]
+keywords = ["checklist", "tui"]
+categories = ["command-line-utilities", "development-tools"]
+readme = "README.org"
+edition = "2018"
+
+[[bin]]
+name = "cls"
+path = "src/main.rs"
+
+[dependencies]
+stepper-lib = { path="../stepper-lib" }
+clap = "2.33"
+isatty = "0.1.9"
+anyhow = "1.0.45"
